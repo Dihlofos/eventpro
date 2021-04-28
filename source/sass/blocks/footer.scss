@@ -1,0 +1,36 @@
+.footer {
+  padding: 40px 45px;
+}
+
+.footer__container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.footer__logo {
+  margin-left: 132px;
+  margin-right: 120px;
+}
+
+.footer__mail {
+  padding: 10px;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer__mail-link {
+  margin: 0;
+  padding: 0;
+}
+
+.footer__copyright {
+  text-decoration: none;
+  color: inherit;
+  margin-right: 192px;
+}

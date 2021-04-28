@@ -1,21 +1,29 @@
+html {
+  @include font(10px, 10px, 400);
+}
+
 body {
-  @include font();
+  @include font(1.6rem, 2.1rem, 400);
   @include fields();
   position: relative;
   min-width: $mobile;
   // max-width: $desktop;
   margin: 0 auto;
   font-family: $font;
-  background-color: $white;
-  color: $black;
+  background-color: $black;
+  color: $white;
   overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
 
-  @media (min-width: $desktop) { // шаблон медиа-запроса desktop-first
-
+  @media (max-width: $desktop) {
+    // шаблон медиа-запроса desktop-first
   }
 
-  @media (min-resolution: $extra) { // шаблон для фонового изображения на экранах с повышенной плотностью пикселей
-
+  @media (min-resolution: $extra) {
+    // шаблон для фонового изображения на экранах с повышенной плотностью пикселей
   }
 }
 
@@ -26,7 +34,12 @@ body,
   box-sizing: border-box;
 }
 
+main {
+  flex-grow: 1;
+}
+
 img {
   max-width: 100%;
   height: auto;
+  display: block;
 }
