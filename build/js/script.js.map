@@ -1,0 +1,1 @@
+{"version":3,"names":[],"mappings":"","sources":["script.js"],"sourcesContent":["\"use strict\";\n\nconsole.log(111); // проверка подключения скриптов"],"file":"script.js"}
