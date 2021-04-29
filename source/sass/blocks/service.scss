@@ -13,13 +13,186 @@
 }
 
 .service__item {
-  padding: 24px 24px 24px 130px;
+  padding: 24px 24px 24px 180px;
   border-radius: 20px;
-  border: 1px solid $red;
+  border: 1px solid $green;
   max-width: 338px;
   min-height: 196px;
   display: flex;
   align-items: center;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 391px;
+    height: 391px;
+    top: -80px;
+    left: -100px;
+    background-image: url(../img/service1.png);
+    background-size: 391px 391px;
+    background-position: 50% 50%;
+  }
+
+  &:hover {
+    background-color: $green;
+    box-shadow: 0 0 33px $green;
+    transition: all 0.3s ease-in-out;
+  }
+
+  &:nth-of-type(2) {
+    padding: 24px 24px 24px 130px;
+    border-color: $red;
+
+    &:hover {
+      background-color: $red;
+      box-shadow: 0 0 33px $red;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 141px;
+      height: 241px;
+      top: -30px;
+      left: -30px;
+      background-image: url(../img/service2.png);
+      background-size: 141px 241px;
+      background-position: 50% 50%;
+    }
+  }
+
+  &:nth-of-type(3) {
+    padding: 24px 24px 24px 150px;
+    border-color: $lilac;
+
+    &:hover {
+      background-color: $lilac;
+      box-shadow: 0 0 33px $lilac;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 343px;
+      height: 343px;
+      top: -70px;
+      left: -130px;
+      background-image: url(../img/service3.png);
+      background-size: 343px 343px;
+      background-position: 50% 50%;
+    }
+  }
+
+  &:nth-of-type(4) {
+    padding: 24px 24px 24px 130px;
+    border-color: $tomato;
+
+    &:hover {
+      background-color: $tomato;
+      box-shadow: 0 0 33px $tomato;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 198px;
+      height: 185px;
+      top: -10px;
+      left: -80px;
+      background-image: url(../img/service4.png);
+      background-size: 198px 185px;
+      background-position: 50% 50%;
+    }
+  }
+
+  &:nth-of-type(5) {
+    padding: 24px 24px 24px 130px;
+    border-color: $water;
+
+    &:hover {
+      background-color: $water;
+      box-shadow: 0 0 33px $water;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 185px;
+      height: 234px;
+      top: -20px;
+      left: -70px;
+      background-image: url(../img/service5.png);
+      background-size: 185px 234px;
+      background-position: 50% 50%;
+    }
+  }
+
+  &:nth-of-type(6) {
+    padding: 24px 24px 24px 130px;
+    border-color: $orange;
+
+    &:hover {
+      background-color: $orange;
+      box-shadow: 0 0 33px $orange;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 166px;
+      height: 243px;
+      top: -30px;
+      left: -50px;
+      background-image: url(../img/service6.png);
+      background-size: 166px 243px;
+      background-position: 50% 50%;
+    }
+  }
+
+  &:nth-of-type(7) {
+    padding: 24px 24px 24px 130px;
+    border-color: $blue;
+
+    &:hover {
+      background-color: $blue;
+      box-shadow: 0 0 33px $blue;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 268px;
+      height: 245px;
+      top: -20px;
+      left: -100px;
+      background-image: url(../img/service7.png);
+      background-size: 268px 245px;
+      background-position: 50% 50%;
+    }
+  }
+
+  &:nth-of-type(8) {
+    padding: 24px 24px 24px 130px;
+    border-color: $forest;
+
+    &:hover {
+      background-color: $forest;
+      box-shadow: 0 0 33px $forest;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 234px;
+      height: 162px;
+      top: 25px;
+      left: -50px;
+      background-image: url(../img/service8.png);
+      background-size: 234px 162px;
+      background-position: 50% 50%;
+    }
+  }
 }
 
 .service__text {
