@@ -18,5 +18,11 @@
 
   &--accent {
     background-color: $red;
+
+    &:hover {
+      background-color: $red;
+      box-shadow: 0 0 25px $red;
+      transition: all 0.3s ease-in-out;
+    }
   }
 }
