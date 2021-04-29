@@ -21,6 +21,7 @@
   display: flex;
   align-items: center;
   position: relative;
+  transition: all 0.3s ease-in-out;
 
   &::before {
     position: absolute;
@@ -37,7 +38,6 @@
   &:hover {
     background-color: $green;
     box-shadow: 0 0 33px $green;
-    transition: all 0.3s ease-in-out;
   }
 
   &:nth-of-type(2) {

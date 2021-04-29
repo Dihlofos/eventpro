@@ -15,6 +15,7 @@
   color: inherit;
   padding: 12px 20px;
   border-radius: 10px;
+  transition: all 0.3s ease-in-out;
 
   &--accent {
     background-color: $red;
@@ -22,7 +23,6 @@
     &:hover {
       background-color: $red;
       box-shadow: 0 0 25px $red;
-      transition: all 0.3s ease-in-out;
     }
   }
 }
