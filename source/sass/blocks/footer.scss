@@ -1,5 +1,5 @@
 .footer {
-  padding: 40px 45px;
+  padding: 40px 0 45px;
 }
 
 .footer__container {
@@ -9,13 +9,12 @@
 }
 
 .footer__logo {
-  margin-left: 132px;
-  margin-right: 120px;
+  margin-right: 100px;
 }
 
 .footer__mail {
   padding: 10px;
-  margin-right: auto;
+  margin-right: 40px;
   display: flex;
   justify-content: space-between;
   gap: 10px;
@@ -32,5 +31,7 @@
 .footer__copyright {
   text-decoration: none;
   color: inherit;
-  margin-right: 192px;
+  margin-left: auto;
+  font-family: $poppins;
+  opacity: 0.65;
 }

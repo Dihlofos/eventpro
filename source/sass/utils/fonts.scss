@@ -1,21 +1,39 @@
 @font-face {
-  font-family: "PT Sans";
+  font-family: "Noto Sans";
   font-display: swap;
   font-weight: 400;
   font-style: normal;
-  src: local("PT Sans"),
-    local("PTSans-Regular"),
-    url("../fonts/ptsans.woff2") format("woff2"),
-    url("../fonts/ptsans.woff") format("woff");
+  src: local("Noto Sans"), local("NotoSans-Regular"),
+    url("../fonts/NotoSans.woff2") format("woff2"),
+    url("../fonts/NotoSans.woff") format("woff");
 }
 
 @font-face {
-  font-family: "PT Sans";
+  font-family: "Noto Sans";
   font-display: swap;
   font-weight: 700;
   font-style: normal;
-  src: local("PT Sans Bold"),
-    local("PTSans-Bold"),
-    url("../fonts/ptsansbold.woff2") format("woff2"),
-    url("../fonts/ptsansbold.woff") format("woff");
+  src: local("Noto Sans Bold"), local("NotoSans-Bold"),
+    url("../fonts/NotoSans-Bold.woff2") format("woff2"),
+    url("../fonts/NotoSans-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+  src: local("Poppins"), local("Poppins-Regular"),
+    url("../fonts/Poppins-Regular.woff2") format("woff2"),
+    url("../fonts/Poppins-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Prosto One";
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+  src: local("Prosto One"), local("Prosto One-Regular"),
+    url("../fonts/ProstoOne-Regular.woff2") format("woff2"),
+    url("../fonts/ProstoOne-Regular.woff") format("woff");
 }

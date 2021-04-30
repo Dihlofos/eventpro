@@ -110,8 +110,48 @@
         </div>
       </section>
       <section class="contacts">
-        <div class="container">
-          <h2 class="section-title">Обратная связь</h2>
+        <h2 class="visually-hidden">Обратная связь</h2>
+        <div class="contacts__container container">
+          <div class="contacts__content">
+            <p class="contacts__text">Остались вопросы?</p>
+            <p class="contacts__text">
+              Хотите оставить заявку или познакомиться поближе?
+            </p>
+            <p class="contacts__text">Напишите нам</p>
+          </div>
+          <div class="contacts__form">
+            <form class="form" action="#" method="post">
+              <div class="form__input form__input--client">
+                <input type="text" id="client" placeholder="Имя" />
+                <label for="client"></label>
+              </div>
+
+              <div class="form__input form__input--phone">
+                <input type="tel" id="phone" placeholder="Телефон" />
+                <label for="phone"></label>
+              </div>
+
+              <div class="form__input form__input--email">
+                <input type="email" id="email" placeholder="Почта" />
+                <label for="email"></label>
+              </div>
+
+              <div class="form__textarea">
+                <textarea
+                  name="messege"
+                  id="messege"
+                  placeholder="Вопрос"
+                ></textarea>
+              </div>
+
+              <div class="form__input form__input--checkbox">
+                <input type="checkbox" id="agreement" />
+                <label for="agreement">Согласен с вашей политикой, ладно</label>
+              </div>
+
+              <button class="form__submit" type="submit">Заявить</button>
+            </form>
+          </div>
         </div>
       </section>
     </main>

@@ -1,0 +1,13 @@
+.contacts__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts__content {
+  flex: 0 1 50%;
+}
+
+.contacts__form {
+  flex: 1 0 50%;
+  max-width: 564px;
+}

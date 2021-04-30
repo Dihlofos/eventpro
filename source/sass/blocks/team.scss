@@ -3,7 +3,7 @@
 }
 
 .team__text {
-  @include font(1.6rem, 3rem, 400);
+  @include font(1.8rem, 3rem, 400);
   margin: 0 auto 30px;
   padding: 0;
   text-align: center;
@@ -29,6 +29,7 @@
   flex-basis: 240px;
   padding-top: 200px;
   position: relative;
+  transition: all 0.3s ease-in-out;
 
   &::before {
     position: absolute;
@@ -53,6 +54,10 @@
     left: 40px;
   }
 
+  &:hover::after {
+    background-image: url(../img/team11.png);
+  }
+
   &:nth-of-type(2) {
     &::before {
       background-color: $green;
@@ -60,6 +65,10 @@
 
     &::after {
       background-image: url(../img/team2.png);
+    }
+
+    &:hover::after {
+      background-image: url(../img/team22.png);
     }
   }
 
@@ -71,11 +80,19 @@
     &::after {
       background-image: url(../img/team3.png);
     }
+
+    &:hover::after {
+      background-image: url(../img/team33.png);
+    }
   }
 
   &:nth-of-type(4) {
     &::after {
       background-image: url(../img/team4.png);
+    }
+
+    &:hover::after {
+      background-image: url(../img/team44.png);
     }
   }
 
@@ -87,6 +104,10 @@
     &::after {
       background-image: url(../img/team5.png);
     }
+
+    &:hover::after {
+      background-image: url(../img/team55.png);
+    }
   }
 
   &:nth-of-type(6) {
@@ -96,6 +117,10 @@
 
     &::after {
       background-image: url(../img/team6.png);
+    }
+
+    &:hover::after {
+      background-image: url(../img/team66.png);
     }
   }
 
@@ -107,6 +132,10 @@
     &::after {
       background-image: url(../img/team7.png);
     }
+
+    &:hover::after {
+      background-image: url(../img/team77.png);
+    }
   }
 
   &:nth-of-type(8) {
@@ -116,6 +145,10 @@
 
     &::after {
       background-image: url(../img/team8.png);
+    }
+
+    &:hover::after {
+      background-image: url(../img/team88.png);
     }
   }
 }

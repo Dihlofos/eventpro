@@ -9,6 +9,7 @@
 }
 
 .nav__link {
+  @include font(1.8rem, 2.4rem, 500);
   display: block;
   text-decoration: none;
   text-transform: capitalize;
@@ -19,6 +20,7 @@
 
   &--accent {
     background-color: $red;
+    text-transform: uppercase;
 
     &:hover {
       background-color: $red;
