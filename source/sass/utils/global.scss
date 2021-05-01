@@ -1,10 +1,15 @@
 html {
   @include font(10px, 10px, 400);
+
+  @media (max-width: 1420px) {
+    @include font(8px, 8px, 400);
+  }
 }
 
 body {
   @include font(1.6rem, 2.1rem, 400);
-  @include fields();
+  margin: 0;
+  padding: 0;
   position: relative;
   min-width: $mobile;
   // max-width: $desktop;

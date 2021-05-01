@@ -1,5 +1,5 @@
 .service {
-  margin-bottom: 145px;
+  margin-bottom: 14.5rem;
 }
 
 .service__list {
@@ -9,15 +9,15 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 70px;
+  gap: 7rem;
 }
 
 .service__item {
-  padding: 24px 24px 24px 180px;
-  border-radius: 20px;
+  padding: 2.4rem 2.4rem 2.4rem 18rem;
+  border-radius: 2rem;
   border: 1px solid $green;
-  max-width: 338px;
-  min-height: 196px;
+  max-width: 33.8rem;
+  min-height: 19.6rem;
   display: flex;
   align-items: center;
   position: relative;
@@ -26,170 +26,170 @@
   &::before {
     position: absolute;
     content: "";
-    width: 391px;
-    height: 391px;
-    top: -80px;
-    left: -100px;
+    width: 39.1rem;
+    height: 39.1rem;
+    top: -8rem;
+    left: -10rem;
     background-image: url(../img/service1.png);
-    background-size: 391px 391px;
+    background-size: 39.1rem 39.1rem;
     background-position: 50% 50%;
   }
 
   &:hover {
     background-color: $green;
-    box-shadow: 0 0 33px $green;
+    box-shadow: 0 0 3.3rem $green;
   }
 
   &:nth-of-type(2) {
-    padding: 24px 24px 24px 130px;
+    padding: 2.4rem 2.4rem 2.4rem 13rem;
     border-color: $red;
 
     &:hover {
       background-color: $red;
-      box-shadow: 0 0 33px $red;
+      box-shadow: 0 0 3.3rem $red;
     }
 
     &::before {
       position: absolute;
       content: "";
-      width: 141px;
-      height: 241px;
-      top: -30px;
-      left: -30px;
+      width: 14.1rem;
+      height: 24.1rem;
+      top: -3rem;
+      left: -3rem;
       background-image: url(../img/service2.png);
-      background-size: 141px 241px;
+      background-size: 14.1rem 24.1rem;
       background-position: 50% 50%;
     }
   }
 
   &:nth-of-type(3) {
-    padding: 24px 24px 24px 150px;
+    padding: 2.4rem 2.4rem 2.4rem 15rem;
     border-color: $lilac;
 
     &:hover {
       background-color: $lilac;
-      box-shadow: 0 0 33px $lilac;
+      box-shadow: 0 0 3.3rem $lilac;
     }
 
     &::before {
       position: absolute;
       content: "";
-      width: 343px;
-      height: 343px;
-      top: -70px;
-      left: -130px;
+      width: 34.3rem;
+      height: 34.3rem;
+      top: -7rem;
+      left: -13rem;
       background-image: url(../img/service3.png);
-      background-size: 343px 343px;
+      background-size: 34.3rem 34.3rem;
       background-position: 50% 50%;
     }
   }
 
   &:nth-of-type(4) {
-    padding: 24px 24px 24px 130px;
+    padding: 2.4rem 2.4rem 2.4rem 13rem;
     border-color: $tomato;
 
     &:hover {
       background-color: $tomato;
-      box-shadow: 0 0 33px $tomato;
+      box-shadow: 0 0 3.3rem $tomato;
     }
 
     &::before {
       position: absolute;
       content: "";
-      width: 198px;
-      height: 185px;
-      top: -10px;
-      left: -80px;
+      width: 19.8rem;
+      height: 18.5rem;
+      top: -1rem;
+      left: -8rem;
       background-image: url(../img/service4.png);
-      background-size: 198px 185px;
+      background-size: 19.8rem 18.5rem;
       background-position: 50% 50%;
     }
   }
 
   &:nth-of-type(5) {
-    padding: 24px 24px 24px 130px;
+    padding: 2.4rem 2.4rem 2.4rem 13rem;
     border-color: $water;
 
     &:hover {
       background-color: $water;
-      box-shadow: 0 0 33px $water;
+      box-shadow: 0 0 3.3rem $water;
     }
 
     &::before {
       position: absolute;
       content: "";
-      width: 185px;
-      height: 234px;
-      top: -20px;
-      left: -70px;
+      width: 18.5rem;
+      height: 23.4rem;
+      top: -2rem;
+      left: -7rem;
       background-image: url(../img/service5.png);
-      background-size: 185px 234px;
+      background-size: 18.5rem 23.4rem;
       background-position: 50% 50%;
     }
   }
 
   &:nth-of-type(6) {
-    padding: 24px 24px 24px 130px;
+    padding: 2.4rem 2.4rem 2.4rem 13rem;
     border-color: $orange;
 
     &:hover {
       background-color: $orange;
-      box-shadow: 0 0 33px $orange;
+      box-shadow: 0 0 3.3rem $orange;
     }
 
     &::before {
       position: absolute;
       content: "";
-      width: 166px;
-      height: 243px;
-      top: -30px;
-      left: -50px;
+      width: 16.6rem;
+      height: 24.3rem;
+      top: -3rem;
+      left: -5rem;
       background-image: url(../img/service6.png);
-      background-size: 166px 243px;
+      background-size: 16.6rem 24.3rem;
       background-position: 50% 50%;
     }
   }
 
   &:nth-of-type(7) {
-    padding: 24px 24px 24px 130px;
+    padding: 2.4rem 2.4rem 2.4rem 13rem;
     border-color: $blue;
 
     &:hover {
       background-color: $blue;
-      box-shadow: 0 0 33px $blue;
+      box-shadow: 0 0 3.3rem $blue;
     }
 
     &::before {
       position: absolute;
       content: "";
-      width: 268px;
-      height: 245px;
-      top: -20px;
-      left: -100px;
+      width: 26.8rem;
+      height: 24.5rem;
+      top: -2rem;
+      left: -10rem;
       background-image: url(../img/service7.png);
-      background-size: 268px 245px;
+      background-size: 26.8rem 24.5rem;
       background-position: 50% 50%;
     }
   }
 
   &:nth-of-type(8) {
-    padding: 24px 24px 24px 130px;
+    padding: 2.4rem 2.4rem 2.4rem 13rem;
     border-color: $forest;
 
     &:hover {
       background-color: $forest;
-      box-shadow: 0 0 33px $forest;
+      box-shadow: 0 0 3.3rem $forest;
     }
 
     &::before {
       position: absolute;
       content: "";
-      width: 234px;
-      height: 162px;
-      top: 25px;
-      left: -50px;
+      width: 23.4rem;
+      height: 16.2rem;
+      top: 2.5rem;
+      left: -5rem;
       background-image: url(../img/service8.png);
-      background-size: 234px 162px;
+      background-size: 23.4rem 16.2rem;
       background-position: 50% 50%;
     }
   }
