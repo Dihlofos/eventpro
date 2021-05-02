@@ -2,7 +2,7 @@ console.log(111) // проверка подключения скриптов
 
 "use strict";
 (function () {
-  const swiper = new Swiper(".swiper-container", {
+  const swiper = new Swiper(".about__swiper", {
     // Optional parameters
     direction: "horizontal",
     loop: true,
@@ -24,8 +24,8 @@ console.log(111) // проверка подключения скриптов
     },
 
     // And if we need scrollbar
-    scrollbar: {
-      el: ".swiper-scrollbar",
-    },
+    // scrollbar: {
+    //   el: ".swiper-scrollbar",
+    // },
   });
 })();
