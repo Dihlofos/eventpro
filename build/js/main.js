@@ -1,8 +1,6 @@
-console.log(111) // проверка подключения скриптов
-
 "use strict";
 (function () {
-  const swiper = new Swiper(".about__swiper", {
+  const swiperSlider = new Swiper(".about__swiper", {
     // Optional parameters
     direction: "horizontal",
     loop: true,
@@ -27,5 +25,18 @@ console.log(111) // проверка подключения скриптов
     // scrollbar: {
     //   el: ".swiper-scrollbar",
     // },
+  });
+})();
+
+"use strict";
+(function () {
+  var swiperTabs = new Swiper(".about__tabs", {
+    spaceBetween: 30,
+    effect: "fade",
+    pagination: {
+      el: ".tabs__pagination",
+      clickable: true,
+      type: "bullets",
+    },
   });
 })();

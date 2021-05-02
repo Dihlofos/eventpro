@@ -1,6 +1,6 @@
 "use strict";
 (function () {
-  const swiper = new Swiper(".about__swiper", {
+  const swiperSlider = new Swiper(".about__swiper", {
     // Optional parameters
     direction: "horizontal",
     loop: true,

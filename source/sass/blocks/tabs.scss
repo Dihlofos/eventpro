@@ -1,0 +1,60 @@
+.tabs img {
+  object-fit: cover;
+}
+
+.tabs__elem {
+  display: flex;
+  justify-content: center;
+  height: 58.7rem;
+  background-color: $black;
+}
+
+.tabs__aside {
+  flex-basis: 35rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 6rem 1.5rem 4rem 3.5rem;
+
+  &--violet {
+    background-color: $violet;
+  }
+
+  &--wine {
+    background-color: $wine;
+  }
+
+  &--green2 {
+    background-color: $green2;
+  }
+
+  &--ketchup {
+    background-color: $ketchup;
+  }
+
+  &--green3 {
+    background-color: $green3;
+  }
+
+  &--ice {
+    background-color: $ice;
+  }
+}
+
+.tabs__title {
+  @include font(2.5rem, 3.85rem, 400);
+  margin: 0;
+  text-transform: uppercase;
+  font-family: $prosto;
+  color: $white;
+}
+
+.tabs__photo-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+}
+
+.tabs__bottom {
+  display: flex;
+}
