@@ -1,7 +1,3 @@
-.tabs img {
-  object-fit: cover;
-}
-
 .tabs__elem {
   display: flex;
   justify-content: center;
@@ -10,7 +6,7 @@
 }
 
 .tabs__aside {
-  flex-basis: 35rem;
+  flex-basis: 24%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -53,8 +49,15 @@
   display: flex;
   flex-direction: column;
   justify-content: stretch;
+
+  & img {
+    min-height: 100%;
+    max-width: unset;
+    object-fit: cover;
+  }
 }
 
 .tabs__bottom {
   display: flex;
+  flex-shrink: 0;
 }
