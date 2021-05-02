@@ -52,6 +52,8 @@
     "node": "12.18.2"
   },
   "dependencies": {
-    "babel": "^6.23.0"
+    "babel": "^6.23.0",
+    "gulp-concat": "^2.6.1",
+    "swiper": "^6.5.9"
   }
 }
