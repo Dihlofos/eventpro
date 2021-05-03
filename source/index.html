@@ -473,37 +473,36 @@
             <p class="contacts__text">Напишите нам.</p>
           </div>
           <div class="contacts__form">
-            <form class="form" action="#" method="post">
+            <form class="form js-form" action="#" method="POST">
               <div class="form__input form__input--client">
-                <input type="text" id="client" placeholder="Имя" />
+                <input type="text" id="client" placeholder="Имя" name="name" />
                 <label for="client"></label>
               </div>
 
               <div class="form__input form__input--phone">
-                <input type="tel" id="phone" placeholder="Телефон" required />
+                <input type="tel" id="phone" placeholder="Телефон" name="phone" required />
                 <label for="phone"></label>
               </div>
 
               <div class="form__input form__input--email">
-                <input type="email" id="email" placeholder="Почта" />
+                <input type="email" id="email" placeholder="Почта" name="email" />
                 <label for="email"></label>
               </div>
 
               <div class="form__textarea">
                 <textarea
-                  name="messege"
-                  id="messege"
+                  name="message"
+                  id="message"
                   placeholder="Вопрос"
-                  required
                 ></textarea>
               </div>
 
               <div class="form__input form__input--checkbox">
-                <input type="checkbox" id="agreement" />
+                <input type="checkbox" id="agreement" name="agreement" required/>
                 <label for="agreement">Согласен с вашей политикой, ладно</label>
               </div>
 
-              <button class="form__submit" type="submit">Заявить</button>
+              <button class="form__submit js-form-submit" type="submit">Заявить</button>
             </form>
           </div>
         </div>
@@ -532,6 +531,7 @@
   </svg> -->
     <!-- <script src="js/vendor/swiper.js"></script> -->
     <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+
     <script src="js/vendor.js"></script>
     <script src="js/main.js"></script>
   </body>
