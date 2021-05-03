@@ -1,7 +1,8 @@
 "use strict";
 (function () {
   var swiperTabs = new Swiper(".about__tabs", {
-    spaceBetween: 30,
+    direction: "vertical",
+    centeredSlides: true,
     effect: "fade",
     pagination: {
       el: ".tabs__pagination",

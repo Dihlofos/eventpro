@@ -34,7 +34,7 @@
 
 "use strict";
 (function () {
-  const swiperSlider = new Swiper(".about__swiper", {
+  const swiperSlider = new Swiper(".about__slider", {
     // Optional parameters
     direction: "horizontal",
     centeredSlides: true,
@@ -52,8 +52,8 @@
 
     // Navigation arrows
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+      nextEl: ".swiper__next",
+      prevEl: ".swiper__prev",
     },
 
     // And if we need scrollbar
@@ -66,7 +66,8 @@
 "use strict";
 (function () {
   var swiperTabs = new Swiper(".about__tabs", {
-    spaceBetween: 30,
+    direction: "vertical",
+    centeredSlides: true,
     effect: "fade",
     pagination: {
       el: ".tabs__pagination",

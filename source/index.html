@@ -71,7 +71,7 @@
           <h2 class="section-title">О нас</h2>
 
           <!-- Slider main container -->
-          <div class="about__swiper swiper-container">
+          <section class="about__slider swiper-container">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
               <!-- Slides -->
@@ -173,12 +173,12 @@
 
             <!-- If we need navigation buttons -->
             <div class="swiper__nav">
-              <div class="swiper-button-prev">
+              <div class="swiper__prev">
                 <svg width="16" height="16" role="img" aria-label="Влево">
                   <use xlink:href="img/sprite.svg#icon-arrow"></use>
                 </svg>
               </div>
-              <div class="swiper-button-next">
+              <div class="swiper__next">
                 <svg width="16" height="16" role="img" aria-label="Вправо">
                   <use xlink:href="img/sprite.svg#icon-arrow"></use>
                 </svg>
@@ -186,10 +186,10 @@
             </div>
             <!-- If we need scrollbar -->
             <!-- <div class="swiper-scrollbar"></div> -->
-          </div>
+          </section>
 
-          <div class="about__tabs swiper-container tabs">
-            <div class="swiper-wrapper">
+          <section class="about__tabs swiper-container tabs">
+            <div class="about__tabs-wrapper swiper-wrapper">
               <div class="swiper-slide tabs__elem">
                 <aside class="tabs__aside tabs__aside--violet">
                   <h3 class="tabs__title">Московский выпускной 2020</h3>
@@ -201,34 +201,61 @@
                   />
                 </aside>
                 <div class="tabs__photo-wrapper">
-                  <picture>
-                    <source type="image/webp" srcset="img/tab1-top.webp" />
-                    <img
-                      src="img/tab1-top.png"
-                      width="628"
-                      height="403"
-                      alt="Концерт"
-                    />
-                  </picture>
+                  <div class="tabs__photo-top">
+                    <picture>
+                      <source
+                        type="image/webp"
+                        srcset="img/tab1-top.webp 1x, img/tab1-top@2.webp 2x"
+                      />
+                      <img
+                        src="img/tab1-top.png"
+                        srcset="img/tab1-top.png 628w, img/tab1-top@2.png 1256w"
+                        sizes="628px"
+                        alt="#"
+                      />
+                    </picture>
+                  </div>
                   <div class="tabs__bottom">
-                    <picture>
-                      <source type="image/webp" srcset="img/tab1-left.webp" />
-                      <img
-                        src="img/tab1-left.png"
-                        width="291"
-                        height="184"
-                        alt="Выпускники"
-                      />
-                    </picture>
-                    <picture>
-                      <source type="image/webp" srcset="img/tab1-right.webp" />
-                      <img
-                        src="img/tab1-right.png"
-                        width="337"
-                        height="184"
-                        alt="Сцена"
-                      />
-                    </picture>
+                    <div class="tabs__photo-left">
+                      <picture>
+                        <source
+                          type="image/webp"
+                          srcset="
+                            img/tab1-left.webp   1x,
+                            img/tab1-left@2.webp 2x
+                          "
+                        />
+                        <img
+                          src="img/tab1-left.png"
+                          srcset="
+                            img/tab1-left.png  291w,
+                            img/tab1-top@2.png 582w
+                          "
+                          sizes="291px"
+                          alt="#"
+                        />
+                      </picture>
+                    </div>
+                    <div class="tabs__photo-right">
+                      <picture>
+                        <source
+                          type="image/webp"
+                          srcset="
+                            img/tab1-right.webp   1x,
+                            img/tab1-right@2.webp 2x
+                          "
+                        />
+                        <img
+                          src="img/tab1-right.png"
+                          srcset="
+                            img/tab1-right.png   337w,
+                            img/tab1-right@2.png 674w
+                          "
+                          sizes="337px"
+                          alt="#"
+                        />
+                      </picture>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -246,36 +273,62 @@
                   />
                 </aside>
                 <div class="tabs__photo-wrapper">
-                  <picture>
-                    <source type="image/webp" srcset="img/tab2-top.webp" />
-                    <img
-                      src="img/tab2-top.png"
-                      width="628"
-                      height="403"
-                      alt="Концерт"
-                    />
-                  </picture>
-                  <div class="tabs__bottom">
-                    <img src="https://via.placeholder.com/291x184" />
-                    <!-- <picture>
-                      <source type="image/webp" srcset="img/tab2-left.webp" />
+                  <div class="tabs__photo-top">
+                    <picture>
+                      <source
+                        type="image/webp"
+                        srcset="img/tab2-top.webp 1x, img/tab2-top@2.webp 2x"
+                      />
                       <img
-                        src="img/tab2-left.png"
-                        width="291"
-                        height="184"
-                        alt="Выпускники"
+                        src="img/tab2-top.png"
+                        srcset="img/tab2-top.png 628w, img/tab2-top@2.png 1256w"
+                        sizes="628px"
+                        alt="#"
                       />
                     </picture>
-                    <picture>
-                      <source type="image/webp" srcset="img/tab2-right.webp" />
-                      <img
-                        src="img/tab2-right.png"
-                        width="337"
-                        height="184"
-                        alt="Сцена"
-                      />
-                    </picture> -->
-                    <img src="https://via.placeholder.com/337x184" />
+                  </div>
+                  <div class="tabs__bottom">
+                    <div class="tabs__photo-left">
+                      <picture>
+                        <source
+                          type="image/webp"
+                          srcset="
+                            img/tab2-left.webp   1x,
+                            img/tab2-left@2.webp 2x
+                          "
+                        />
+                        <img
+                          src="img/tab2-left.png"
+                          srcset="
+                            img/tab2-left.png  291w,
+                            img/tab2-top@2.png 582w
+                          "
+                          sizes="291px"
+                          alt="#"
+                        />
+                      </picture>
+                    </div>
+
+                    <div class="tabs__photo-right">
+                      <picture>
+                        <source
+                          type="image/webp"
+                          srcset="
+                            img/tab2-right.webp   1x,
+                            img/tab2-right@2.webp 2x
+                          "
+                        />
+                        <img
+                          src="img/tab2-right.png"
+                          srcset="
+                            img/tab2-right.png   337w,
+                            img/tab2-right@2.png 674w
+                          "
+                          sizes="337px"
+                          alt="#"
+                        />
+                      </picture>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -290,35 +343,62 @@
                   />
                 </aside>
                 <div class="tabs__photo-wrapper">
-                  <picture>
-                    <source type="image/webp" srcset="img/tab3-top.webp" />
-                    <img
-                      src="img/tab3-top.png"
-                      width="628"
-                      height="399"
-                      alt="Концерт"
-                    />
-                  </picture>
-                  <div class="tabs__bottom">
+                  <div class="tabs__photo-top">
                     <picture>
-                      <source type="image/webp" srcset="img/tab3-left.webp" />
+                      <source
+                        type="image/webp"
+                        srcset="img/tab3-top.webp 1x, img/tab3-top@2.webp 2x"
+                      />
                       <img
-                        src="img/tab3-left.png"
-                        width="290"
-                        height="187"
-                        alt="Выпускники"
+                        src="img/tab3-top.png"
+                        srcset="img/tab3-top.png 628w, img/tab3-top@2.png 1256w"
+                        sizes="628px"
+                        alt="#"
                       />
                     </picture>
-                    <!-- <picture>
-                      <source type="image/webp" srcset="img/tab3-right.webp" />
-                      <img
-                        src="img/tab3-right.png"
-                        width="337"
-                        height="187"
-                        alt="Сцена"
-                      />
-                    </picture> -->
-                    <img src="https://via.placeholder.com/337x184" />
+                  </div>
+                  <div class="tabs__bottom">
+                    <div class="tabs__photo-left">
+                      <picture>
+                        <source
+                          type="image/webp"
+                          srcset="
+                            img/tab3-left.webp   1x,
+                            img/tab3-left@2.webp 2x
+                          "
+                        />
+                        <img
+                          src="img/tab3-left.png"
+                          srcset="
+                            img/tab3-left.png  291w,
+                            img/tab3-top@2.png 582w
+                          "
+                          sizes="291px"
+                          alt="#"
+                        />
+                      </picture>
+                    </div>
+
+                    <div class="tabs__photo-right">
+                      <picture>
+                        <source
+                          type="image/webp"
+                          srcset="
+                            img/tab3-right.webp   1x,
+                            img/tab3-right@2.webp 2x
+                          "
+                        />
+                        <img
+                          src="img/tab3-right.png"
+                          srcset="
+                            img/tab3-right.png   337w,
+                            img/tab3-right@2.png 674w
+                          "
+                          sizes="337px"
+                          alt="#"
+                        />
+                      </picture>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -333,35 +413,61 @@
                   />
                 </aside>
                 <div class="tabs__photo-wrapper">
-                  <picture>
-                    <source type="image/webp" srcset="img/tab4-top.webp" />
-                    <img
-                      src="img/tab4-top.png"
-                      width="629"
-                      height="402"
-                      alt="Концерт"
-                    />
-                  </picture>
-                  <div class="tabs__bottom">
+                  <div class="tabs__photo-top">
                     <picture>
-                      <source type="image/webp" srcset="img/tab4-left.webp" />
+                      <source
+                        type="image/webp"
+                        srcset="img/tab4-top.webp 1x, img/tab4-top@2.webp 2x"
+                      />
                       <img
-                        src="img/tab4-left.png"
-                        width="293"
-                        height="184"
-                        alt="Выпускники"
+                        src="img/tab4-top.png"
+                        srcset="img/tab4-top.png 628w, img/tab4-top@2.png 1256w"
+                        sizes="628px"
+                        alt="#"
                       />
                     </picture>
-                    <!-- <picture>
-                      <source type="image/webp" srcset="img/tab4-right.webp" />
-                      <img
-                        src="img/tab4-right.png"
-                        width="337"
-                        height="180"
-                        alt="Сцена"
-                      />
-                    </picture> -->
-                    <img src="https://via.placeholder.com/337x184" />
+                  </div>
+                  <div class="tabs__bottom">
+                    <div class="tabs__photo-left">
+                      <picture>
+                        <source
+                          type="image/webp"
+                          srcset="
+                            img/tab4-left.webp   1x,
+                            img/tab4-left@2.webp 2x
+                          "
+                        />
+                        <img
+                          src="img/tab4-left.png"
+                          srcset="
+                            img/tab4-left.png  291w,
+                            img/tab4-top@2.png 582w
+                          "
+                          sizes="291px"
+                          alt="#"
+                        />
+                      </picture>
+                    </div>
+                    <div class="tabs__photo-right">
+                      <picture>
+                        <source
+                          type="image/webp"
+                          srcset="
+                            img/tab4-right.webp   1x,
+                            img/tab4-right@2.webp 2x
+                          "
+                        />
+                        <img
+                          src="img/tab4-right.png"
+                          srcset="
+                            img/tab4-right.png   337w,
+                            img/tab4-right@2.png 674w
+                          "
+                          sizes="337px"
+                          alt="#"
+                        />
+                      </picture>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -377,34 +483,61 @@
                   />
                 </aside>
                 <div class="tabs__photo-wrapper">
-                  <picture>
-                    <source type="image/webp" srcset="img/tab5-top.webp" />
-                    <img
-                      src="img/tab5-top.png"
-                      width="628"
-                      height="400"
-                      alt="Концерт"
-                    />
-                  </picture>
+                  <div class="tabs__photo-top">
+                    <picture>
+                      <source
+                        type="image/webp"
+                        srcset="img/tab5-top.webp 1x, img/tab5-top@2.webp 2x"
+                      />
+                      <img
+                        src="img/tab5-top.png"
+                        srcset="img/tab5-top.png 628w, img/tab5-top@2.png 1256w"
+                        sizes="628px"
+                        alt="#"
+                      />
+                    </picture>
+                  </div>
                   <div class="tabs__bottom">
-                    <picture>
-                      <source type="image/webp" srcset="img/tab5-left.webp" />
-                      <img
-                        src="img/tab5-left.png"
-                        width="293"
-                        height="185"
-                        alt="Выпускники"
-                      />
-                    </picture>
-                    <picture>
-                      <source type="image/webp" srcset="img/tab5-right.webp" />
-                      <img
-                        src="img/tab5-right.png"
-                        width="334"
-                        height="185"
-                        alt="Сцена"
-                      />
-                    </picture>
+                    <div class="tabs__photo-left">
+                      <picture>
+                        <source
+                          type="image/webp"
+                          srcset="
+                            img/tab5-left.webp   1x,
+                            img/tab5-left@2.webp 2x
+                          "
+                        />
+                        <img
+                          src="img/tab5-left.png"
+                          srcset="
+                            img/tab5-left.png  291w,
+                            img/tab5-top@2.png 582w
+                          "
+                          sizes="291px"
+                          alt="#"
+                        />
+                      </picture>
+                    </div>
+                    <div class="tabs__photo-right">
+                      <picture>
+                        <source
+                          type="image/webp"
+                          srcset="
+                            img/tab5-right.webp   1x,
+                            img/tab5-right@2.webp 2x
+                          "
+                        />
+                        <img
+                          src="img/tab5-right.png"
+                          srcset="
+                            img/tab5-right.png   337w,
+                            img/tab5-right@2.png 674w
+                          "
+                          sizes="337px"
+                          alt="#"
+                        />
+                      </picture>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -421,40 +554,67 @@
                   />
                 </aside>
                 <div class="tabs__photo-wrapper">
-                  <picture>
-                    <source type="image/webp" srcset="img/tab6-top.webp" />
-                    <img
-                      src="img/tab6-top.png"
-                      width="628"
-                      height="403"
-                      alt="Концерт"
-                    />
-                  </picture>
+                  <div class="tabs__photo-top">
+                    <picture>
+                      <source
+                        type="image/webp"
+                        srcset="img/tab6-top.webp 1x, img/tab6-top@2.webp 2x"
+                      />
+                      <img
+                        src="img/tab6-top.png"
+                        srcset="img/tab6-top.png 628w, img/tab6-top@2.png 1256w"
+                        sizes="628px"
+                        alt="#"
+                      />
+                    </picture>
+                  </div>
                   <div class="tabs__bottom">
-                    <picture>
-                      <source type="image/webp" srcset="img/tab6-left.webp" />
-                      <img
-                        src="img/tab6-left.png"
-                        width="325"
-                        height="184"
-                        alt="Выпускники"
-                      />
-                    </picture>
-                    <picture>
-                      <source type="image/webp" srcset="img/tab6-right.webp" />
-                      <img
-                        src="img/tab6-right.png"
-                        width="303"
-                        height="184"
-                        alt="Сцена"
-                      />
-                    </picture>
+                    <div class="tabs__photo-left">
+                      <picture>
+                        <source
+                          type="image/webp"
+                          srcset="
+                            img/tab6-left.webp   1x,
+                            img/tab6-left@2.webp 2x
+                          "
+                        />
+                        <img
+                          src="img/tab6-left.png"
+                          srcset="
+                            img/tab6-left.png  291w,
+                            img/tab6-top@2.png 582w
+                          "
+                          sizes="291px"
+                          alt="#"
+                        />
+                      </picture>
+                    </div>
+                    <div class="tabs__photo-right">
+                      <picture>
+                        <source
+                          type="image/webp"
+                          srcset="
+                            img/tab6-right.webp   1x,
+                            img/tab6-right@2.webp 2x
+                          "
+                        />
+                        <img
+                          src="img/tab6-right.png"
+                          srcset="
+                            img/tab6-right.png   337w,
+                            img/tab6-right@2.png 674w
+                          "
+                          sizes="337px"
+                          alt="#"
+                        />
+                      </picture>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
             <div class="swiper-pagination tabs__pagination"></div>
-          </div>
+          </section>
         </div>
       </section>
       <section class="team">
@@ -515,12 +675,23 @@
               </div>
 
               <div class="form__input form__input--phone">
-                <input type="tel" id="phone" placeholder="Телефон" name="phone" required />
+                <input
+                  type="tel"
+                  id="phone"
+                  placeholder="Телефон"
+                  name="phone"
+                  required
+                />
                 <label for="phone"></label>
               </div>
 
               <div class="form__input form__input--email">
-                <input type="email" id="email" placeholder="Почта" name="email" />
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="Почта"
+                  name="email"
+                />
                 <label for="email"></label>
               </div>
 
@@ -533,11 +704,18 @@
               </div>
 
               <div class="form__input form__input--checkbox">
-                <input type="checkbox" id="agreement" name="agreement" required/>
+                <input
+                  type="checkbox"
+                  id="agreement"
+                  name="agreement"
+                  required
+                />
                 <label for="agreement">Согласен с вашей политикой, ладно</label>
               </div>
 
-              <button class="form__submit js-form-submit" type="submit">Заявить</button>
+              <button class="form__submit js-form-submit" type="submit">
+                Заявить
+              </button>
             </form>
           </div>
         </div>
