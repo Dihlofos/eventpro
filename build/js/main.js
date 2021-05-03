@@ -3,6 +3,7 @@
   const swiperSlider = new Swiper(".about__swiper", {
     // Optional parameters
     direction: "horizontal",
+    centeredSlides: true,
     loop: true,
     slidesPerView: 3,
     slidesPerGroup: 1,
