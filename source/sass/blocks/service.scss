@@ -12,10 +12,19 @@
   gap: 7rem;
 }
 
+.service__img {
+  position: absolute;
+  content: "";
+  pointer-events: none;
+  object-fit: cover;
+  object-position: center;
+  top: -8rem;
+  left: -10rem;
+}
+
 .service__item {
   padding: 2.4rem 2.4rem 2.4rem 18rem;
   border-radius: 2rem;
-  border: 1px solid $green;
   max-width: 33.8rem;
   min-height: 19.6rem;
   display: flex;
@@ -23,175 +32,121 @@
   position: relative;
   transition: all 0.3s ease-in-out;
 
-  &::before {
-    position: absolute;
-    content: "";
-    width: 39.1rem;
-    height: 39.1rem;
-    top: -8rem;
-    left: -10rem;
-    background-image: url(../img/service1.png);
-    background-size: 39.1rem 39.1rem;
-    background-position: 50% 50%;
-    pointer-events: none;
+  &--green {
+    border: 1px solid $green;
+
+    & .service__img {
+      top: -8rem;
+      left: -10rem;
+    }
+
+    &:hover {
+      background-color: $green;
+      box-shadow: 0 0 3.3rem $green;
+    }
   }
 
-  &:hover {
-    background-color: $green;
-    box-shadow: 0 0 3.3rem $green;
-  }
+  &--red {
+    padding: 2.4rem 2.4rem 2.4rem 15rem;
+    border: 1px solid $red;
 
-  &:nth-of-type(2) {
-    padding: 2.4rem 2.4rem 2.4rem 13rem;
-    border-color: $red;
+    & .service__img {
+      top: -3rem;
+      left: -3rem;
+    }
 
     &:hover {
       background-color: $red;
       box-shadow: 0 0 3.3rem $red;
     }
-
-    &::before {
-      position: absolute;
-      content: "";
-      width: 14.1rem;
-      height: 24.1rem;
-      top: -3rem;
-      left: -3rem;
-      background-image: url(../img/service2.png);
-      background-size: 14.1rem 24.1rem;
-      background-position: 50% 50%;
-    }
   }
 
-  &:nth-of-type(3) {
+  &--lilac {
+    border: 1px solid $lilac;
     padding: 2.4rem 2.4rem 2.4rem 15rem;
-    border-color: $lilac;
+
+    & .service__img {
+      top: -7rem;
+      left: -13rem;
+    }
 
     &:hover {
       background-color: $lilac;
       box-shadow: 0 0 3.3rem $lilac;
     }
-
-    &::before {
-      position: absolute;
-      content: "";
-      width: 34.3rem;
-      height: 34.3rem;
-      top: -7rem;
-      left: -13rem;
-      background-image: url(../img/service3.png);
-      background-size: 34.3rem 34.3rem;
-      background-position: 50% 50%;
-    }
   }
 
-  &:nth-of-type(4) {
+  &--tomato {
     padding: 2.4rem 2.4rem 2.4rem 13rem;
-    border-color: $tomato;
+    border: 1px solid $tomato;
+
+    & .service__img {
+      top: -1rem;
+      left: -8rem;
+    }
 
     &:hover {
       background-color: $tomato;
       box-shadow: 0 0 3.3rem $tomato;
     }
-
-    &::before {
-      position: absolute;
-      content: "";
-      width: 19.8rem;
-      height: 18.5rem;
-      top: -1rem;
-      left: -8rem;
-      background-image: url(../img/service4.png);
-      background-size: 19.8rem 18.5rem;
-      background-position: 50% 50%;
-    }
   }
 
-  &:nth-of-type(5) {
-    padding: 2.4rem 2.4rem 2.4rem 13rem;
-    border-color: $water;
+  &--water {
+    padding: 2.4rem 2.4rem 2.4rem 12.6rem;
+    border: 1px solid $water;
+
+    & .service__img {
+      top: -2rem;
+      left: -7rem;
+    }
 
     &:hover {
       background-color: $water;
       box-shadow: 0 0 3.3rem $water;
     }
-
-    &::before {
-      position: absolute;
-      content: "";
-      width: 18.5rem;
-      height: 23.4rem;
-      top: -2rem;
-      left: -7rem;
-      background-image: url(../img/service5.png);
-      background-size: 18.5rem 23.4rem;
-      background-position: 50% 50%;
-    }
   }
 
-  &:nth-of-type(6) {
-    padding: 2.4rem 2.4rem 2.4rem 13rem;
-    border-color: $orange;
+  &--orange {
+    padding: 2.4rem 2.4rem 2.4rem 15rem;
+    border: 1px solid $orange;
+
+    & .service__img {
+      top: -3rem;
+      left: -5rem;
+    }
 
     &:hover {
       background-color: $orange;
       box-shadow: 0 0 3.3rem $orange;
     }
-
-    &::before {
-      position: absolute;
-      content: "";
-      width: 16.6rem;
-      height: 24.3rem;
-      top: -3rem;
-      left: -5rem;
-      background-image: url(../img/service6.png);
-      background-size: 16.6rem 24.3rem;
-      background-position: 50% 50%;
-    }
   }
 
-  &:nth-of-type(7) {
+  &--blue {
     padding: 2.4rem 2.4rem 2.4rem 13rem;
-    border-color: $blue;
+    border: 1px solid $blue;
+    & .service__img {
+      top: -2rem;
+      left: -10rem;
+    }
 
     &:hover {
       background-color: $blue;
       box-shadow: 0 0 3.3rem $blue;
     }
-
-    &::before {
-      position: absolute;
-      content: "";
-      width: 26.8rem;
-      height: 24.5rem;
-      top: -2rem;
-      left: -10rem;
-      background-image: url(../img/service7.png);
-      background-size: 26.8rem 24.5rem;
-      background-position: 50% 50%;
-    }
   }
 
-  &:nth-of-type(8) {
-    padding: 2.4rem 2.4rem 2.4rem 13rem;
-    border-color: $forest;
+  &--forest {
+    padding: 2.4rem 2.4rem 2.4rem 15rem;
+    border: 1px solid $forest;
+
+    & .service__img {
+      top: 2.5rem;
+      left: -5rem;
+    }
 
     &:hover {
       background-color: $forest;
       box-shadow: 0 0 3.3rem $forest;
-    }
-
-    &::before {
-      position: absolute;
-      content: "";
-      width: 23.4rem;
-      height: 16.2rem;
-      top: 2.5rem;
-      left: -5rem;
-      background-image: url(../img/service8.png);
-      background-size: 23.4rem 16.2rem;
-      background-position: 50% 50%;
     }
   }
 }

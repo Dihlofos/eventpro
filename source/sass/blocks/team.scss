@@ -29,7 +29,7 @@
   flex-basis: 24rem;
   padding-top: 20rem;
   position: relative;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.5s ease-in-out;
 
   &::before {
     position: absolute;
@@ -39,118 +39,67 @@
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    background-color: $red;
     border-radius: 2rem;
   }
 
-  &::after {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 100%;
-    background-image: url(../img/team1.png);
-    background-repeat: no-repeat;
-    top: -3rem;
-    left: 4rem;
+  &--red {
+    &::before {
+      background-color: $red;
+    }
   }
 
-  &:hover::after {
-    background-image: url(../img/team11.png);
-  }
-
-  &:nth-of-type(2) {
+  &--green {
     &::before {
       background-color: $green;
     }
-
-    &::after {
-      background-image: url(../img/team2.png);
-    }
-
-    &:hover::after {
-      background-image: url(../img/team22.png);
-    }
   }
 
-  &:nth-of-type(3) {
+  &--yellow {
     &::before {
       background-color: $yellow;
     }
-
-    &::after {
-      background-image: url(../img/team3.png);
-    }
-
-    &:hover::after {
-      background-image: url(../img/team33.png);
-    }
   }
 
-  &:nth-of-type(4) {
-    &::after {
-      background-image: url(../img/team4.png);
-    }
-
-    &:hover::after {
-      background-image: url(../img/team44.png);
-    }
-  }
-
-  &:nth-of-type(5) {
-    &::before {
-      background-color: $yellow;
-    }
-
-    &::after {
-      background-image: url(../img/team5.png);
-    }
-
-    &:hover::after {
-      background-image: url(../img/team55.png);
-    }
-  }
-
-  &:nth-of-type(6) {
+  &--sky-blue {
     &::before {
       background-color: $sky-blue;
     }
-
-    &::after {
-      background-image: url(../img/team6.png);
-    }
-
-    &:hover::after {
-      background-image: url(../img/team66.png);
-    }
   }
 
-  &:nth-of-type(7) {
-    &::before {
-      background-color: $green;
-    }
-
-    &::after {
-      background-image: url(../img/team7.png);
-    }
-
-    &:hover::after {
-      background-image: url(../img/team77.png);
-    }
-  }
-
-  &:nth-of-type(8) {
+  &--blue {
     &::before {
       background-color: $blue;
     }
+  }
 
-    &::after {
-      background-image: url(../img/team8.png);
+  &:hover {
+    & .team__img {
+      opacity: 0;
     }
-
-    &:hover::after {
-      background-image: url(../img/team88.png);
+    & .team__img-hover {
+      opacity: 1;
     }
   }
+}
+
+.team__img-wrapper {
+  position: absolute;
+  content: "";
+  top: -2rem;
+  left: 1rem;
+  pointer-events: none;
+}
+
+.team__img {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  opacity: 1;
+}
+
+.team__img-hover {
+  opacity: 0;
 }
 
 .team__member {
