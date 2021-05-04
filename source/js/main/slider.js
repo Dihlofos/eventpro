@@ -2,14 +2,12 @@
 (function () {
   const swiperSlider = new Swiper(".about__slider", {
     // Optional parameters
-    direction: "horizontal",
-    centeredSlides: true,
     loop: true,
     slidesPerView: 3,
-    slidesPerGroup: 1,
+    centeredSlides: true,
     spaceBetween: 30,
-    speed: 1000,
-    freeMode: true,
+    speed: 500,
+    freeMode: false,
 
     // If we need pagination
     // pagination: {
