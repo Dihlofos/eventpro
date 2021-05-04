@@ -1,9 +1,30 @@
 .about {
   margin-bottom: 16rem;
+
+  .container {
+    overflow: hidden;
+  }
 }
 
 .about__slider {
   margin-bottom: 19rem;
+  overflow: visible;
+
+  .swiper-slide {
+    opacity: 0;
+    transition: opacity 0.2s linear;
+  }
+
+  .swiper-slide-active {
+    transform: scale(1.2);
+    z-index: 50;
+    opacity: 1;
+  }
+
+  .swiper-slide-prev,
+  .swiper-slide-next {
+    opacity: 1;
+  }
 }
 
 .about__tabs {
