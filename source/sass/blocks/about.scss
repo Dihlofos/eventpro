@@ -1,9 +1,12 @@
 .about {
-  margin-bottom: 16rem;
+  margin-bottom: 10rem;
+  padding-bottom: 8rem;
+}
 
-  .container {
-    overflow: hidden;
-  }
+.about__container {
+  // overflow: hidden;
+  padding-bottom: 10rem;
+  position: relative;
 }
 
 .about__slider {
@@ -13,6 +16,50 @@
   .swiper-slide {
     opacity: 0;
     transition: opacity 0.2s linear;
+    transition: all 0.3s ease-in-out;
+
+    &--shade {
+      border-radius: 20px;
+      overflow: hidden;
+
+      &::after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: $slider-shade;
+      }
+    }
+  }
+
+  .swiper__content {
+    margin: 0;
+    padding: 3rem 5rem;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper__text {
+    @include font(2rem, 3.3rem, 400);
+    margin: 0;
+    font-family: $prosto;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .swiper__nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .swiper-slide-active {
@@ -25,13 +72,40 @@
   .swiper-slide-next {
     opacity: 1;
   }
+
+  .swiper__prev,
+  .swiper__next {
+    width: 5rem;
+    height: 5rem;
+    margin-top: 8rem;
+    margin-bottom: 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90.08deg, $red 0.05%, #ed4b7c 99.92%);
+    box-shadow: 0px 4px 4px rgba(254, 98, 1, 0.3);
+    border-radius: 50%;
+    margin-right: 2.5rem;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      background-color: $ketchup;
+      box-shadow: 0 0 2.5rem $ketchup;
+    }
+  }
+
+  .swiper__next {
+    background: linear-gradient(90.08deg, $red 0.05%, #ed4b7c 99.92%);
+  }
+  .swiper__next svg {
+    transform: rotate(180deg);
+  }
 }
 
 .about__tabs {
   max-width: 105.4rem;
   max-height: 58.7rem;
-}
-
-.about__tabs-wrapper {
-  padding: 0 5rem;
+  padding-top: 6rem;
+  position: relative;
 }

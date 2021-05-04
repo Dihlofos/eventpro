@@ -16,11 +16,17 @@
       <div class="container">
         <nav class="header__nav nav">
           <ul class="nav__list">
-            <li class="nav__item"><a class="nav__link" href="#">О нас</a></li>
-            <li class="nav__item"><a class="nav__link" href="#">Проекты</a></li>
-            <li class="nav__item"><a class="nav__link" href="#">Команда</a></li>
             <li class="nav__item">
-              <a class="nav__link nav__link--accent" href="#"
+              <a class="nav__link" href="#about">О нас</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#portfolio">Проекты</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#team">Команда</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link nav__link--accent" href="#contacts"
                 >Оставить заявку</a
               >
             </li>
@@ -45,8 +51,11 @@
           <div class="intro__video-wrapper">
             <video
               class="intro__video-video"
-              src="assets/video/indexEnVideo.mp4"
+              src="img/graduation.mp4"
+              type="video/mp4"
               poster="img/poster.png"
+              autoplay
+              loop
             ></video>
           </div>
         </div>
@@ -182,8 +191,8 @@
           <img src="img/line-desktop.png" width="1920" height="86" alt="" />
         </h1>
       </div>
-      <section class="about">
-        <div class="container">
+      <section class="about" id="about">
+        <div class="about__container container">
           <h2 class="section-title">О нас</h2>
 
           <!-- Slider main container -->
@@ -305,9 +314,9 @@
             <!-- <div class="swiper-scrollbar"></div> -->
           </section>
 
-          <section class="about__tabs swiper-container tabs">
+          <section class="about__tabs swiper-container tabs" id="portfolio">
             <h3 class="visually-hidden">Табы</h3>
-            <div class="about__tabs-wrapper swiper-wrapper">
+            <div class="tabs__container swiper-wrapper">
               <div class="swiper-slide tabs__elem">
                 <aside class="tabs__aside tabs__aside--violet">
                   <h3 class="tabs__title">Московский выпускной 2020</h3>
@@ -450,6 +459,7 @@
                   </div>
                 </div>
               </div>
+
               <div class="swiper-slide tabs__elem">
                 <aside class="tabs__aside tabs__aside--green2">
                   <h3 class="tabs__title">Ассамблея «Здоровая Москва» 2020</h3>
@@ -520,6 +530,7 @@
                   </div>
                 </div>
               </div>
+
               <div class="swiper-slide tabs__elem">
                 <aside class="tabs__aside tabs__aside--ketchup">
                   <h3 class="tabs__title">Проект «Спортивные выходные»</h3>
@@ -659,6 +670,7 @@
                   </div>
                 </div>
               </div>
+
               <div class="swiper-slide tabs__elem">
                 <aside class="tabs__aside tabs__aside--ice">
                   <h3 class="tabs__title">
@@ -733,9 +745,22 @@
             </div>
             <div class="swiper-pagination tabs__pagination"></div>
           </section>
+          <!-- If we need navigation buttons -->
+          <div class="tabs__nav">
+            <div class="tabs__prev">
+              <svg width="16" height="16" role="img" aria-label="Влево">
+                <use xlink:href="img/sprite.svg#icon-arrow"></use>
+              </svg>
+            </div>
+            <div class="tabs__next">
+              <svg width="16" height="16" role="img" aria-label="Вправо">
+                <use xlink:href="img/sprite.svg#icon-arrow"></use>
+              </svg>
+            </div>
+          </div>
         </div>
       </section>
-      <section class="team">
+      <section class="team" id="team">
         <div class="team__container container">
           <h2 class="section-title">Команда</h2>
           <p class="team__text">
@@ -750,13 +775,13 @@
           <ul class="team__list">
             <li class="team__item team__item--red">
               <div class="team__img-wrapper">
-                <div class="team__img">
+                <div class="team__img team__img--unhover">
                   <picture>
                     <source type="image/webp" srcset="img/team1.webp" />
                     <img src="img/team1.png" width="211" height="157" alt="#" />
                   </picture>
                 </div>
-                <div class="team__img-hover">
+                <div class="team__img team__img--hover">
                   <picture>
                     <source type="image/webp" srcset="img/team11.webp" />
                     <img
@@ -772,13 +797,13 @@
             </li>
             <li class="team__item team__item--green">
               <div class="team__img-wrapper">
-                <div class="team__img">
+                <div class="team__img team__img--unhover">
                   <picture>
                     <source type="image/webp" srcset="img/team2.webp" />
                     <img src="img/team2.png" width="216" height="215" alt="#" />
                   </picture>
                 </div>
-                <div class="team__img-hover">
+                <div class="team__img team__img--hover">
                   <picture>
                     <source type="image/webp" srcset="img/team22.webp" />
                     <img
@@ -794,13 +819,13 @@
             </li>
             <li class="team__item team__item--yellow">
               <div class="team__img-wrapper">
-                <div class="team__img">
+                <div class="team__img team__img--unhover">
                   <picture>
                     <source type="image/webp" srcset="img/team3.webp" />
                     <img src="img/team3.png" width="203" height="199" alt="#" />
                   </picture>
                 </div>
-                <div class="team__img-hover">
+                <div class="team__img team__img--hover">
                   <picture>
                     <source type="image/webp" srcset="img/team33.webp" />
                     <img
@@ -816,13 +841,13 @@
             </li>
             <li class="team__item team__item--red">
               <div class="team__img-wrapper">
-                <div class="team__img">
+                <div class="team__img team__img--unhover">
                   <picture>
                     <source type="image/webp" srcset="img/team4.webp" />
                     <img src="img/team4.png" width="215" height="216" alt="#" />
                   </picture>
                 </div>
-                <div class="team__img-hover">
+                <div class="team__img team__img--hover">
                   <picture>
                     <source type="image/webp" srcset="img/team44.webp" />
                     <img
@@ -838,13 +863,13 @@
             </li>
             <li class="team__item team__item--yellow">
               <div class="team__img-wrapper">
-                <div class="team__img">
+                <div class="team__img team__img--unhover">
                   <picture>
                     <source type="image/webp" srcset="img/team5.webp" />
                     <img src="img/team5.png" width="234" height="234" alt="#" />
                   </picture>
                 </div>
-                <div class="team__img-hover">
+                <div class="team__img team__img--hover">
                   <picture>
                     <source type="image/webp" srcset="img/team55.webp" />
                     <img
@@ -860,13 +885,13 @@
             </li>
             <li class="team__item team__item--sky-blue">
               <div class="team__img-wrapper">
-                <div class="team__img">
+                <div class="team__img team__img--unhover">
                   <picture>
                     <source type="image/webp" srcset="img/team6.webp" />
                     <img src="img/team6.png" width="214" height="217" alt="#" />
                   </picture>
                 </div>
-                <div class="team__img-hover">
+                <div class="team__img team__img--hover">
                   <picture>
                     <source type="image/webp" srcset="img/team66.webp" />
                     <img
@@ -882,13 +907,13 @@
             </li>
             <li class="team__item team__item--green">
               <div class="team__img-wrapper">
-                <div class="team__img">
+                <div class="team__img team__img--unhover">
                   <picture>
                     <source type="image/webp" srcset="img/team7.webp" />
                     <img src="img/team7.png" width="239" height="239" alt="#" />
                   </picture>
                 </div>
-                <div class="team__img-hover">
+                <div class="team__img team__img--hover">
                   <picture>
                     <source type="image/webp" srcset="img/team77.webp" />
                     <img
@@ -904,13 +929,13 @@
             </li>
             <li class="team__item team__item--blue">
               <div class="team__img-wrapper">
-                <div class="team__img">
+                <div class="team__img team__img--unhover">
                   <picture>
                     <source type="image/webp" srcset="img/team8.webp" />
                     <img src="img/team8.png" width="234" height="234" alt="#" />
                   </picture>
                 </div>
-                <div class="team__img-hover">
+                <div class="team__img team__img--hover">
                   <picture>
                     <source type="image/webp" srcset="img/team88.webp" />
                     <img
@@ -927,7 +952,7 @@
           </ul>
         </div>
       </section>
-      <section class="contacts">
+      <section class="contacts" id="contacts">
         <h2 class="visually-hidden">Обратная связь</h2>
         <div class="contacts__container container">
           <div class="contacts__content">
@@ -1063,6 +1088,14 @@
         >
       </div>
     </footer>
+
+    <!-- Кнопка "наверх" -->
+
+    <a class="up">
+      <svg width="16" height="16" role="img" aria-label="Наверх">
+        <use xlink:href="img/sprite.svg#icon-arrow"></use>
+      </svg>
+    </a>
 
     <!-- svg template -->
     <!-- <svg width="118" height="17" role="img" aria-label="">
