@@ -43,6 +43,7 @@
     // Optional parameters
     direction: "horizontal",
     centeredSlides: true,
+
     loop: true,
     slidesPerView: 3,
     slidesPerGroup: 1,
