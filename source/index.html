@@ -30,16 +30,11 @@
     </header>
     <main>
       <section class="intro">
-        <!-- <div class="container"> -->
         <div class="intro__content">
           <div class="intro__text">
-            <img
-              class="intro__logo"
-              src="img/logo-xl.png"
-              width="593"
-              height="84"
-              alt="Event Pro"
-            />
+            <svg width="593" height="84" role="img" aria-label="Event Pro">
+              <use xlink:href="img/sprite.svg#icon-logo"></use>
+            </svg>
             <h2 class="intro__name">
               Коммуникационное<br />
               агентство
@@ -47,11 +42,7 @@
           </div>
         </div>
         <div class="intro__video">
-          <div class="intro__video-preview">
-            <button type="button">Play</button>
-          </div>
           <div class="intro__video-wrapper">
-            <div class="intro__video-poster"></div>
             <video
               class="intro__video-video"
               src="assets/video/indexEnVideo.mp4"
@@ -59,7 +50,6 @@
             ></video>
           </div>
         </div>
-        <!-- </div> -->
       </section>
       <section class="service">
         <div class="container">
@@ -180,7 +170,18 @@
           </ul>
         </div>
       </section>
-      <div class="line"></div>
+      <div
+        class="line line--single marquee3k"
+        data-speed="0.5"
+        data-reverse="bool"
+        data-pausable="bool"
+      >
+        <!--you can even have inline images,
+        or any kind of html -->
+        <h1>
+          <img src="img/line-desktop.png" width="1920" height="86" alt="" />
+        </h1>
+      </div>
       <section class="about">
         <div class="container">
           <h2 class="section-title">О нас</h2>
@@ -937,7 +938,8 @@
             <p class="contacts__text">Напишите нам.</p>
           </div>
           <div class="contacts__form">
-            <form class="form js-form" action="#" method="POST">
+            <!-- <form class="form js-form" action="#" method="POST"> -->
+            <form class="form js-form" action="#">
               <div class="form__input form__input--client">
                 <input type="text" id="client" placeholder="Имя" name="name" />
                 <label for="client"></label>
@@ -989,11 +991,66 @@
           </div>
         </div>
       </section>
+      <div class="line-wrapper">
+        <div
+          class="line line--triple marquee3k"
+          data-speed="0.5"
+          data-reverse="bool"
+          data-pausable="bool"
+        >
+          <!--you can even have inline images,
+      or any kind of html -->
+          <h1>
+            <img
+              src="img/line2-desktop.png"
+              width="1920"
+              height="132"
+              alt="Оставьте заявку"
+            />
+          </h1>
+        </div>
+        <div
+          class="line line--triple marquee3k"
+          data-speed="0.5"
+          data-reverse="false"
+          data-pausable="bool"
+        >
+          <!--you can even have inline images,
+      or any kind of html -->
+          <h1>
+            <img
+              src="img/line2-desktop.png"
+              width="1920"
+              height="132"
+              alt="Оставьте заявку"
+            />
+          </h1>
+        </div>
+        <div
+          class="line line--triple marquee3k"
+          data-speed="0.5"
+          data-reverse="false"
+          data-pausable="bool"
+        >
+          <!--you can even have inline images,
+      or any kind of html -->
+          <h1>
+            <img
+              src="img/line2-desktop.png"
+              width="1920"
+              height="132"
+              alt="Оставьте заявку"
+            />
+          </h1>
+        </div>
+      </div>
     </main>
     <footer class="footer">
       <div class="footer__container container">
         <a class="logo footer__logo" href="#">
-          <img src="img/logo.png" width="118" height="17" alt="Логотип" />
+          <svg width="118" height="17" role="img" aria-label="Event Pro">
+            <use xlink:href="img/sprite.svg#icon-logo"></use>
+          </svg>
         </a>
         <a class="footer__mail" href="mailto:hola@liftmedia.com">
           <svg width="24" height="24" role="img" aria-label="email">

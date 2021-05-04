@@ -2,6 +2,7 @@
 (function () {
   var swiperTabs = new Swiper(".about__tabs", {
     direction: "vertical",
+    autoplay: true,
     centeredSlides: true,
     effect: "fade",
     pagination: {

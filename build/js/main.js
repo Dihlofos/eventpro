@@ -34,6 +34,11 @@
 
 "use strict";
 (function () {
+  Marquee3k.init();
+})();
+
+"use strict";
+(function () {
   const swiperSlider = new Swiper(".about__slider", {
     // Optional parameters
     direction: "horizontal",
@@ -67,6 +72,7 @@
 (function () {
   var swiperTabs = new Swiper(".about__tabs", {
     direction: "vertical",
+    autoplay: true,
     centeredSlides: true,
     effect: "fade",
     pagination: {
