@@ -114,7 +114,7 @@
 }
 
 .tabs__pagination {
-  left: 0;
+  left: 1.8rem;
   display: flex;
   flex-direction: column;
   margin-bottom: auto;
@@ -146,10 +146,11 @@
 .tabs__nav {
   position: absolute;
   content: "";
-  left: 50%;
-  bottom: -1rem;
+  left: 2.5rem;
+  bottom: 0;
   transform: translateX(-50%);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   z-index: 1000;
@@ -163,21 +164,29 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(90.08deg, $red 0.05%, #ed4b7c 99.92%);
-  box-shadow: 0px 4px 4px rgba(254, 98, 1, 0.3);
+  background: transparent;
   border-radius: 50%;
-  margin-right: 2.5rem;
+  border: 2px solid $white;
+  margin-bottom: 2.5rem;
+  transform: rotate(90deg);
   transition: all 0.3s ease-in-out;
 
+  & svg {
+    fill: $white;
+    transition: all 0.3s ease-in-out;
+  }
+
   &:hover {
-    background-color: $ketchup;
-    box-shadow: 0 0 2.5rem $ketchup;
+    background-color: $white;
+
+    & svg {
+      fill: $black;
+    }
   }
 }
 
 .tabs__next {
-  background: linear-gradient(90.08deg, $red 0.05%, #ed4b7c 99.92%);
-  margin-right: 0;
+  margin-bottom: 0;
 }
 .tabs__next svg {
   transform: rotate(180deg);

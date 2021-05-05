@@ -17,16 +17,25 @@
         <nav class="header__nav nav">
           <ul class="nav__list">
             <li class="nav__item">
-              <a class="nav__link" href="#about">О нас</a>
+              <a class="nav__link .js-scroll" data-scroll href="#about"
+                >О нас</a
+              >
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="#portfolio">Проекты</a>
+              <a class="nav__link .js-scroll" data-scroll href="#portfolio"
+                >Проекты</a
+              >
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="#team">Команда</a>
+              <a class="nav__link .js-scroll" data-scroll href="#team"
+                >Команда</a
+              >
             </li>
             <li class="nav__item">
-              <a class="nav__link nav__link--accent" href="#contacts"
+              <a
+                class="nav__link nav__link--accent .js-scroll"
+                data-scroll
+                href="#contacts"
                 >Оставить заявку</a
               >
             </li>
@@ -51,10 +60,10 @@
           <div class="intro__video-wrapper">
             <video
               class="intro__video-video"
-              src="img/graduation.mp4"
-              type="video/mp4"
+              src="video/graduation.mp4"
               poster="img/poster.png"
               autoplay
+              muted
               loop
             ></video>
           </div>
@@ -183,13 +192,13 @@
         class="line line--single marquee3k"
         data-speed="0.5"
         data-reverse="bool"
-        data-pausable="bool"
       >
-        <!--you can even have inline images,
-        or any kind of html -->
-        <h1>
-          <img src="img/line-desktop.png" width="1920" height="86" alt="" />
-        </h1>
+        <img
+          src="img/line-single.png"
+          width="666"
+          height="86"
+          alt="Качественно. Быстро. Стильно."
+        />
       </div>
       <section class="about" id="about">
         <div class="about__container container">
@@ -300,12 +309,24 @@
             <!-- If we need navigation buttons -->
             <div class="swiper__nav">
               <div class="swiper__prev">
-                <svg width="16" height="16" role="img" aria-label="Влево">
+                <svg
+                  width="16"
+                  height="16"
+                  role="img"
+                  fill="#ffffff"
+                  aria-label="Влево"
+                >
                   <use xlink:href="img/sprite.svg#icon-arrow"></use>
                 </svg>
               </div>
               <div class="swiper__next">
-                <svg width="16" height="16" role="img" aria-label="Вправо">
+                <svg
+                  width="16"
+                  height="16"
+                  role="img"
+                  fill="#ffffff"
+                  aria-label="Вправо"
+                >
                   <use xlink:href="img/sprite.svg#icon-arrow"></use>
                 </svg>
               </div>
@@ -744,20 +765,20 @@
               </div>
             </div>
             <div class="swiper-pagination tabs__pagination"></div>
+            <!-- If we need navigation buttons -->
+            <div class="tabs__nav">
+              <div class="tabs__prev">
+                <svg width="16" height="16" role="img" aria-label="Влево">
+                  <use xlink:href="img/sprite.svg#icon-arrow"></use>
+                </svg>
+              </div>
+              <div class="tabs__next">
+                <svg width="16" height="16" role="img" aria-label="Вправо">
+                  <use xlink:href="img/sprite.svg#icon-arrow"></use>
+                </svg>
+              </div>
+            </div>
           </section>
-          <!-- If we need navigation buttons -->
-          <div class="tabs__nav">
-            <div class="tabs__prev">
-              <svg width="16" height="16" role="img" aria-label="Влево">
-                <use xlink:href="img/sprite.svg#icon-arrow"></use>
-              </svg>
-            </div>
-            <div class="tabs__next">
-              <svg width="16" height="16" role="img" aria-label="Вправо">
-                <use xlink:href="img/sprite.svg#icon-arrow"></use>
-              </svg>
-            </div>
-          </div>
         </div>
       </section>
       <section class="team" id="team">
@@ -1021,52 +1042,53 @@
           class="line line--triple marquee3k"
           data-speed="1"
           data-reverse="true"
-          data-pausable="false"
         >
-          <!--you can even have inline images,
-      or any kind of html -->
-          <h1>
+          <div class="line__wrapper">
             <img
-              src="img/line2-desktop.png"
-              width="1920"
-              height="132"
+              src="img/line-triple.png"
+              width="600"
+              height="94"
               alt="Оставьте заявку"
             />
-          </h1>
+            <img
+              src="img/line-triple.png"
+              width="600"
+              height="94"
+              alt="Оставьте заявку"
+            />
+          </div>
         </div>
         <div
           class="line line--triple marquee3k"
           data-speed="0.5"
           data-reverse="false"
-          data-pausable="false"
         >
-          <!--you can even have inline images,
-      or any kind of html -->
-          <h1>
+          <div class="line__wrapper">
             <img
-              src="img/line2-desktop.png"
-              width="1920"
-              height="132"
+              src="img/line-triple.png"
+              width="600"
+              height="94"
               alt="Оставьте заявку"
             />
-          </h1>
+            <img
+              src="img/line-triple.png"
+              width="600"
+              height="94"
+              alt="Оставьте заявку"
+            />
+          </div>
         </div>
         <div
           class="line line--triple marquee3k"
           data-speed="0.3"
           data-reverse="false"
-          data-pausable="false"
         >
-          <!--you can even have inline images,
-      or any kind of html -->
-          <h1>
-            <img
-              src="img/line2-desktop.png"
-              width="1920"
-              height="132"
-              alt="Оставьте заявку"
-            />
-          </h1>
+          <img
+            src="img/line-triple.png"
+            width="600"
+            height="94"
+            alt="Оставьте заявку"
+          />
         </div>
       </div>
     </main>
