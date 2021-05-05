@@ -13,10 +13,18 @@
   right: calc((100% - 149.2rem) / 2 + 3rem);
   display: flex;
   align-items: center;
+  background-image: url(../img/intro.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
   z-index: 10;
 
-  @media (max-width: 1250px) {
+  @media (max-width: 1480px) {
     right: 2rem;
+  }
+
+  @media (max-width: 1024px) {
+    background-image: none;
   }
 }
 

@@ -87,6 +87,15 @@
 
 "use strict";
 (function () {
+  window.scroll = new SmoothScroll(".js-scroll", {
+    speed: 800,
+    speedAsDuration: true,
+    easing: "easeOutQuad",
+  });
+})();
+
+"use strict";
+(function () {
   var swiperTabs = new Swiper(".about__tabs", {
     direction: "vertical",
     loop: true,
